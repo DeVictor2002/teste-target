@@ -52,6 +52,15 @@ Para a resolução desse exercício utilizei apenas o Java sem buscar biblioteca
 17. Criei a lógica dos cálculos, usando `stream()`.
 18. Exibi os resultados.
 
-**Resultados ↓**
+**Resultados →**
 ![Resultados exercicio 3](assets/terceiro-exercicio.png)
 ---
+## Quarto exercício
+1. Usei a estrutura `map` para armazenar cada estado como chave e seu respectivo valor.
+2. Calculei o faturamento total pegando os valores de faturamento, e utilizando a `stream api`.
+3. Fiz a formatação de vírgulas e pontos no valor.
+4. Calculei o percentual.
+5. Exibi o resultado.
+
+**Resultado →**
+![Resultado exercicio 4](assets/quarto-exercicio.png)
