@@ -65,3 +65,15 @@ Para a resolução desse exercício utilizei apenas o Java sem buscar biblioteca
 **Resultado →**
 ![Resultado exercicio 4](assets/quarto-exercicio.png)
 ---
+## Quinto exercício
+1. Declarei a variável para receber o valor da entrada por teclado com o `Scanner`.
+2. Desenvolvi o método
+     - Declarei um vetor de caracteres com o mesmo tamanho da string original.
+     - Fiz a iteração sobre esse vetor, colocando o caractere da posição inversa da string original.
+     - Converti o vetor para string.
+     - Chamei o método passando a string original como argumento.
+     - Exibi o resultado.
+
+**Resultado →**
+![Resultado quinto exercicio](assets/quinto_exercicio.png)
+---
