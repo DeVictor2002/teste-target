@@ -52,7 +52,7 @@ Para a resolução desse exercício utilizei apenas o Java sem buscar biblioteca
 17. Criei a lógica dos cálculos, usando `stream()`.
 18. Exibi os resultados.
 
-**Resultados →**
+**Resultado →**
 ![Resultados exercicio 3](assets/terceiro-exercicio.png)
 ---
 ## Quarto exercício
