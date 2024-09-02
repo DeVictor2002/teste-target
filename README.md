@@ -31,3 +31,27 @@ Primeiro fui relembrar a lógica da sequência de Fibonacci para implementar uma
 ![Segundo exercicio retornando false](assets/segundo-exercicio2.png)
 > Exemplo retornando `false`
 ---
+## Terceiro exercício
+Para a resolução desse exercício utilizei apenas o Java sem buscar bibliotecas externas.
+1. Criei um objeto File apontando para o arquivo `xml`, onde estão os dados.
+2. Instanciei uma "fábrica" da classe `DocumentBuilderFactory` para que consiga criar objetos `Document`.
+3. Criei um `DocumentBuilder` a partir da fábrica.
+4. Com a classe `Document` transformei o arquivo `xml` em um objeto `Document`.
+5. Normalizei o `xml` para garantir que os dados estejam consistentes.
+6. Com a variável `diaList` do tipo `NodeList`, obtive uma lista com todos os elementos `<dia>` no documento `xml`.
+7. Criei uma lista `faturamentos` para armazenar os valores de faturamento diário.
+8. Inicializei uma variável `totalFaturamento` com o valor 0.0 para somar todos os valores de faturamento.
+9. Declarei um `for` para iterar sobre os elementos `<dia>`
+10. Criei a variável `diaNode` para obter o nó atual da lista.
+11. Fiz a verificação se o nó é verdadeiramente um elemento, e não um texto ou comentário.
+12. Com a variável `diaElement` fiz um cast do nó para um `Element` para conseguir acessar seus filhos e atributos.
+13. Obtive o valor do faturamento do elemento `faturamento` e converti para Double.
+14. Verifiquei se o faturamento é maior do que 0, para que seja ignorado, como proposto.
+15. Adicionei o valor do faturamento à lista.
+16. Adicionei o valor do faturamento à variável `totalFaturamento`.
+17. Criei a lógica dos cálculos, usando `stream()`.
+18. Exibi os resultados.
+
+**Resultados ↓**
+![Resultados exercicio 3](assets/terceiro-exercicio.png)
+---
