@@ -19,7 +19,7 @@ public class Terceiro {
 
         try {
 
-            File inputFile = new File("src/terceiro_exercicio/faturamento-ficticio.xml");
+            File inputFile = new File("src/terceiro_exercicio/dados.xml");
 
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -28,15 +28,17 @@ public class Terceiro {
 
             document.getDocumentElement().normalize();
 
-            NodeList diaList = document.getElementsByTagName("Dia");
+            NodeList rowList = document.getElementsByTagName("row");
+
             List<Double> faturamentos = new ArrayList<>();
             double totalFaturamento = 0.0;
 
-            for (int i = 0; i < diaList.getLength(); i++) {
-                Node diaNode = diaList.item(i);
-                if (diaNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element diaElement = (Element) diaNode;
-                    double faturamento = Double.parseDouble(diaElement.getElementsByTagName("Faturamento").item(0).getTextContent());
+            for (int i = 0; i < rowList.getLength(); i++) {
+                Node rowNode = rowList.item(i);
+                if (rowNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element rowElement = (Element) rowNode;
+                    String valorStr = rowElement.getElementsByTagName("valor").item(0).getTextContent();
+                    double faturamento = Double.parseDouble(valorStr);
                     if (faturamento > 0) {
                         faturamentos.add(faturamento);
                         totalFaturamento += faturamento;

@@ -38,13 +38,13 @@ Para a resolução desse exercício utilizei apenas o Java sem buscar biblioteca
 3. Criei um `DocumentBuilder` a partir da fábrica.
 4. Com a classe `Document` transformei o arquivo `xml` em um objeto `Document`.
 5. Normalizei o `xml` para garantir que os dados estejam consistentes.
-6. Com a variável `diaList` do tipo `NodeList`, obtive uma lista com todos os elementos `<dia>` no documento `xml`.
+6. Com a variável `rowList` do tipo `NodeList`, obtive uma lista com todos os elementos `<row>` no documento `xml`.
 7. Criei uma lista `faturamentos` para armazenar os valores de faturamento diário.
 8. Inicializei uma variável `totalFaturamento` com o valor 0.0 para somar todos os valores de faturamento.
-9. Declarei um `for` para iterar sobre os elementos `<dia>`
-10. Criei a variável `diaNode` para obter o nó atual da lista.
+9. Declarei um `for` para iterar sobre os elementos `<row>`
+10. Criei a variável `rowNode` para obter o nó atual da lista.
 11. Fiz a verificação se o nó é verdadeiramente um elemento, e não um texto ou comentário.
-12. Com a variável `diaElement` fiz um cast do nó para um `Element` para conseguir acessar seus filhos e atributos.
+12. Com a variável `rowElement` fiz um cast do nó para um `Element` para conseguir acessar seus filhos e atributos.
 13. Obtive o valor do faturamento do elemento `faturamento` e converti para Double.
 14. Verifiquei se o faturamento é maior do que 0, para que seja ignorado, como proposto.
 15. Adicionei o valor do faturamento à lista.
